@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión Académica</title>
+  <link rel="stylesheet" href="asignaturas.css">
+  <link rel="icon" href="img/iconUTS.png" type="image/png">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="img/LogoUTS.png" width="110px" alt="Logo UTS" class="logo">
+      <h1>Portal de Estudiantes UTS</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="perfil.php">Perfil</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="asignaturas.html" class="active">Gestión Académica</a></li>
+        <li><a href="login.php">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Resumen Académico -->
+    <section class="resumen">
+      <h2>Progreso Académico</h2>
+      <div id="graficoProgreso"></div>
+      <p>Materias Cursadas: <span id="cursadas">0</span></p>
+      <p>Materias Pendientes: <span id="pendientes">0</span></p>
+    </section>
+
+    <!-- Materias -->
+    <section class="materias">
+      <!-- Semestre 1 -->
+      <div data-semestre="1">
+        <h3>Semestre 1</h3>
+        <ul>
+          <li>
+            <span>Cultura Física</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Álgebra Superior</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Cálculo Diferencial</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Matemáticas Discretas</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Pensamiento Algorítmico</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Herramientas Digitales</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Procesos de Lectura y Escritura</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Semestre 2 -->
+      <div data-semestre="2">
+        <h3>Semestre 2</h3>
+        <ul>
+          <li>
+            <span>Sistemas Digitales</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Estructura de Computadores</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Cálculo Integral</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Fundamentos de POO</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Diseño de Bases de Datos</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Optativa I</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>mecanica</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Semestre 3 -->
+      <div data-semestre="3">
+        <h3>Semestre 3</h3>
+        <ul>
+          <li>
+            <span>Sistemas Operativos</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Programación Orientada a Objetos</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Programación de Dispositivos</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Motores de Bases de Datos</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Electromagnetismo</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Planeación de Sistemas Informáticos</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Epistemología</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Semestre 4 -->
+      <div data-semestre="4">
+        <h3>Semestre 4</h3>
+        <ul>
+          <li>
+            <span>Redes</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Programación Web</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Inglés I</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Laboratorio de Física</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Electiva de Profundización </span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Optativa II</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Estructura de Datos</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Semestre 5 -->
+      <div data-semestre="5">
+        <h3>Semestre 5</h3>
+        <ul>
+          <li>
+            <span>Aplicaciones Móviles</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Administración de Servidores</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Ética</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Programación en Java</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span> Electiva de Profundización II</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Metodología de la Investigación </span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Inglés II</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Semestre 6 -->
+      <div data-semestre="6">
+        <h3>Semestre 6</h3>
+        <ul>
+          <li>
+            <span>Cálculo Multivariable</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Introducción a la Ingeniería</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span> Desarrollo de Aplicaciones Empresariales</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Selección y Evaluación de Tecnología</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Seguridad de las Tecnologías de la Información</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Nuevas Tecnologías de Desarrollo</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+          <li>
+            <span>Electiva de Profundización III</span>
+            <select>
+              <option value="pendiente">Pendiente</option>
+              <option value="en_curso">En curso</option>
+              <option value="cursada">Cursada</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="asignaturas.js"></script>
+</body>
+</html>
+

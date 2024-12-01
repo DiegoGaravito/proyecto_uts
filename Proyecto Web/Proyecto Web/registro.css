@@ -1,0 +1,151 @@
+body.registro-page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('img/EdificioUTS.png'); /* Ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Añadir una capa de fondo semitransparente usando pseudo-elemento */
+body.registro-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con opacidad */
+  z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+/* Contenedor del formulario */
+.registro-page .container {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+  backdrop-filter: blur(10px); /* Desenfoque de fondo */
+  padding: 40px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+}
+
+.registro-page h2 {
+  font-size: 1.8em;
+  color: #fff; /* Cambiar color de texto a blanco */
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+/* Logo en la esquina superior izquierda dentro del cuadro */
+.registro-page .registro-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: auto;
+  max-width: 100px;
+}
+
+.registro-page .logo {
+  width: auto;
+  max-width: 100px;
+  height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo de los campos de entrada */
+label {
+  margin-bottom: 5px;
+  color: #fff; /* Cambiar color de texto a blanco */
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido para los campos */
+  color: #333;
+}
+
+select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido */
+  color: #333; /* Texto oscuro */
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Añadir un icono de flecha personalizado al select */
+select::after {
+  content: '▼'; /* Símbolo de flecha */
+  color: #333;
+  font-size: 0.8em;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Hover y focus para el select */
+select:hover {
+  background-color: rgba(255, 255, 255, 1); /* Aclarar el fondo al pasar el ratón */
+}
+
+select:focus {
+  outline: none; /* Elimina el borde predeterminado de focus */
+  box-shadow: 0 0 5px rgba(16, 137, 42, 0.8); /* Sombra verde */
+}
+
+/* Estilo del botón de registro */
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #10892a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0a6d22;
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  body.registro-page {
+      padding: 0 10px; /* Asegura que no haya margen extra en pantallas pequeñas */
+  }
+
+  .registro-page .container {
+      padding: 20px; /* Reducir el padding en pantallas más pequeñas */
+  }
+
+  .registro-page h2 {
+      font-size: 1.5em; /* Reducir tamaño de fuente */
+      margin-top: 50px;
+  }
+
+  input, button {
+      font-size: 1em; /* Ajustar tamaño de fuente de los campos y botón */
+  }
+}
+  

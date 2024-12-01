@@ -1,0 +1,200 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #108b2b;
+  color: white;
+  padding: 20px 5px 10px; /* Espacio arriba, y a los lados */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px; /* Espacio entre el logo y el título */
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 20px; /* Alinea el logo a la izquierda */
+  margin-right: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8em;
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav {
+  border-top: 2px solid #0a6d22;
+  padding-top: 1px; /* Espacio interno entre la línea y el menú */
+  margin-top: 10px; /* Espacio entre el título y la línea separadora */
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: white;
+  color: #108b2b;
+  border-radius: 5px;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de resumen */
+.resumen {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resumen h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #108b2b;
+}
+
+#graficoProgreso {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(90deg, #108b2b 50%, #d3d3d3 50%);
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.resumen p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* Materias */
+.materias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+[data-semestre] {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+[data-semestre] h3 {
+  font-size: 1.5em;
+  color: #108b2b;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #108b2b;
+  padding-bottom: 5px;
+}
+
+[data-semestre] ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+[data-semestre] li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+[data-semestre] li span {
+  flex: 1;
+  font-size: 1.1em;
+}
+
+[data-semestre] li select {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #f9f9f9;
+}
+
+[data-semestre] li select:hover {
+  border-color: #108b2b;
+}
+
+/* Botón */
+button {
+  background-color: #108b2b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px auto; /* Añadir margen superior e inferior */
+  display: block; /* Asegurar que el botón es un bloque */
+  text-align: center;
+}
+
+button:hover {
+  background-color: #0a6d22;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .materias {
+    grid-template-columns: 1fr;
+  }
+
+  [data-semestre] li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  [data-semestre] li select {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
